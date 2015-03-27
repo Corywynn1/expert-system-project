@@ -1,0 +1,53 @@
+
+
+CTS
+SourceByte,-,-,-,Number,N
+Wrong_Fragment,SourceByte,>,0,Number,N
+dst_host_serror_rate,SourceByte,<=,0,Number,N
+protocol_type,Wrong_Fragment,>,0,Number,N
+dst_host_srv_dif_host_rate,Wrong_Fragment,<=,0,Number,N
+teardrop attack,protocol_type,=,tcp,String,Y
+teardrop attack,protocol_type,=,udp,String,Y
+teardrop attack,protocol_type,=,icmp,String,Y
+ipsweep attack,dst_host_srv_dif_host_rate,>,0.31,Number,Y
+hot,dst_host_srv_dif_host_rate,<=,0.31,Number,N
+hot1,hot,>,0,Number,N
+dst_bytes,hot,<=,0,Number,N
+warezclient attack,hot1,>,2,Number,Y
+guess_password attack,hot1,<=,2,Number,Y
+normal,dst_bytes,>,0,Number,Y
+protocol type,dst_bytes,<=,0,Number,N
+warezclient attack,protocol type,=,tcp,String,Y
+normal,protocol type,=,udp,String,Y
+smurf attack,protocol type,=,icmp,String,Y
+same_srv_rate,dst_host_serror_rate,<=,0.33,Number,N
+flag,dst_host_serror_rate,>,0.33,Number,N
+satan attack,same_srv_rate,<=,0.12,Number,Y
+postsweep attack,same_srv_rate,>,0.12,Number,Y
+nmap attack,flag,=,SF,String,Y
+nmap attack,flag,=,RSTR,String,Y
+nmap attack,flag,=,OTH,String,Y
+nmap attack,flag,=,REJ,String,Y
+nmap attack,flag,=,SH,String,Y
+nmap attack,flag,=,RSTO,String,Y
+nmap attack,flag,=,S3,String,Y
+neptune attack,flag,=,S0,String,Y
+CTE
+
+QTS
+SourceByte,Enter SourceByte Value:
+Wrong_Fragment,Enter Wrong_Fragment Value:
+dst_host_srv_dif_host_rate, Enter dst_host_srv_dif_host_rate Value:
+protocol_type,Enter Protocol:
+hot,Enter hot Value:
+hot1,Enter hot Value:
+dst_bytes,Enter dst_bytes value:
+protocol type,Enter protocol type:
+dst_host_serror_rate,Enter dst_host_serror_rate:
+same_srv_rate, Enter same_srv_rate
+flag, Enter flag: 
+QTE
+
+
+
+

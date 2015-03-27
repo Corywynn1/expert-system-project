@@ -1,0 +1,37 @@
+#Animal Values
+CTS
+Animal,-,-,-,String,N
+mammal,Animal,=,Yes,String,N
+Bird,Animal,=,No,String,N
+Carnivore,mammal,=,Yes,String,N
+Pointed Teeth,Carnivore,=,Yes,String,N
+Retractable claws,Pointed Teeth,=,Yes,String,N
+Cat,Retractable claws,=,Yes,String,Y
+Hoofs,mammal,=,No,String,N
+UnKnown,Retractable claws,=,No,String,Y
+UnKnown,Pointed Teeth,=,No,String,Y
+UnKnown,Carnivore,=,No,String,Y
+Ungulate,Hoofs,=,Yes,String,Y
+Horns,Hoofs,=,No,String,N
+Cow,Horns,=,Yes,String,Y
+UnKnown,Horns,=,No,String,Y
+EatsMeal,Bird,=,Yes,String,N
+Eagle,EatsMeal,=,Yes,String,Y
+Sparrow,EatsMeal,=,No,String,Y
+BlackWhite,Bird,=,No,String,N
+Duck,BlackWhite,=,No,String,Y
+Penguin,BlackWhite,=,Yes,String,Y
+CTE
+
+QTS
+Animal,Is Animal is mammal?
+mammal,Does Animal(mammal) eat meat?
+Carnivore, Does animal have pointed teeth?
+Pointed Teeth, Does animal have Forward Pointing eyes?
+Retractable claws, Are animal has Retractable claws?
+Hoofs,Is animal has hoofs?
+Horns,Is animal has horns?
+Bird,Does animal fly well?
+EatsMeal,Does bird eatt meat?
+BlackWhite,Is bird black and white?
+QTE
